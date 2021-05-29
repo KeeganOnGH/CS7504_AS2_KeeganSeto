@@ -33,7 +33,8 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: PublishBuildArtifacts@1
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
+
+- task: PublishBuildArtifacts@1
